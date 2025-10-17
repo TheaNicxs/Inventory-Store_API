@@ -1,6 +1,8 @@
 // app.js
 const express = require('express');
 const mongoose = require('mongoose');
+const dotenv = require('dotenv'); 
+const connectDB = require('./config/db'); 
 
 const app = express();
 
@@ -12,10 +14,8 @@ app.use('/api', require('./routes/productRoutes'));
 app.use('/api', require('./routes/orderRoutes'));
 app.use('/api', require('./routes/supplierRoutes'));
 
-// MongoDB connection
-mongoose.connect('mongodb+srv://TheaNicxs:Thea1205@softwareengineering.fhbnkku.mongodb.net/?retryWrites=true&w=majority&appName=SoftwareEngineering')
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+dotenv.config(); 
+connectDB(); 
 
 // Start server
 const PORT = 3000;
