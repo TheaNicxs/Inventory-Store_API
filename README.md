@@ -91,4 +91,3 @@ Content-Type: application/json
   "supplierId": "68f108c9495fcb4b47be1aea", <!-- ID of the supplier that you created / posted -->
   "status": "pending"
 }
->>>>>>> 2bc72b121eb1385bae3b5749af37ac5945eac297
