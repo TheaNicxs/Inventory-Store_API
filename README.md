@@ -25,7 +25,7 @@ POST http://localhost:3000/api/products </br>
 Content-Type: application/json
 
 {
-  "sku": "P001",   (you can create your own stock keeping unit name)  </br>
+  "sku": "P001",   `(you can create your own stock keeping unit name)`  </br>
   "name": "Gaming keyboard", </br>
   "price": 1200,</br>
   "stock": 50</br>
@@ -36,8 +36,8 @@ POST http://localhost:3000/api/products/deduct-stock </br>
 Contents-Type:json
 
 { </br>
-  "productId": "64f1a2b3c4d5e6f789012345",   (put the ID of the product that you created)  </br>
-  "quantity": 5   ( numbers of how much you want to deduct in the product)  </br>
+  "productId": "64f1a2b3c4d5e6f789012345",   `(put the ID of the product that you created)`  </br>
+  "quantity": 5   `( numbers of how much you want to deduct in the product)`  </br>
 }
 
 
@@ -83,11 +83,11 @@ Content-Type: application/json
 { </br>
   "items": [ </br>
     { </br>
-      "productId": "64f1a2b3c4d5e6f789012345",   (ID of the created product )  </br> 
+      "productId": "64f1a2b3c4d5e6f789012345",   `(ID of the created product )` </br> 
       "quantity": 2, </br>
       "price": 1200 </br>
     } </br>
   ], </br>
-  "supplierId": "68f108c9495fcb4b47be1aea",  (ID of the supplier that you created / posted)   </br>
+  "supplierId": "68f108c9495fcb4b47be1aea",  `(ID of the supplier that you created / posted) `  </br>
   "status": "pending" </br>
 }
