@@ -21,7 +21,7 @@ A RESTful API for managing products, orders, and suppliers with MongoDB Atlas.
 
 ### Create Product
 
-POST http://localhost:3000/api/products
+POST http://localhost:3000/api/products </br>
 Content-Type: application/json
 
 {
@@ -32,7 +32,7 @@ Content-Type: application/json
 }
 
 ### Deduct Stock
-POST http://localhost:3000/api/products/deduct-stock
+POST http://localhost:3000/api/products/deduct-stock </br>
 Contents-Type:json
 
 {
@@ -53,7 +53,7 @@ Contents-Type:json
 
 ## Sample Requests
 ### Create Supplier
-POST http://localhost:3000/api/suppliers
+POST http://localhost:3000/api/suppliers </br>
 Content-Type: application/json
 
 {
@@ -77,7 +77,7 @@ Content-Type: application/json
 ## Sample Request
 ### Create order
 
-POST http://localhost:3000/api/orders
+POST http://localhost:3000/api/orders </br>
 Content-Type: application/json
 
 {
