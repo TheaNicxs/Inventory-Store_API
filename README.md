@@ -31,6 +31,16 @@ Content-Type: application/json
   "stock": 50
 }
 
+### Deduct Stock
+POST http://localhost:3000/api/products/deduct-stock
+Contents-Type:json
+
+{
+  "productId": "64f1a2b3c4d5e6f789012345", <!-- put the ID of the product that you created --> 
+  "quantity": 5 <!-- numbers of how much you want to deduct in the product -->
+}
+
+
 ### Suppliers
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -54,14 +64,6 @@ Content-Type: application/json
   }
 }
 
-### Deduct Stock
-POST http://localhost:3000/api/products/deduct-stock
-Contents-Type:json
-
-{
-  "productId": "64f1a2b3c4d5e6f789012345", <!-- put the ID of the product that you created --> 
-  "quantity": 5 <!-- numbers of how much you want to deduct in the product -->
-}
 
  ### Orders
 | Method | Endpoint | Description |
