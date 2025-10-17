@@ -24,7 +24,7 @@ A RESTful API for managing products, orders, and suppliers with MongoDB Atlas.
 POST http://localhost:3000/api/products </br>
 Content-Type: application/json
 
-{
+{ </br>
   "sku": "P001",   `(you can create your own stock keeping unit name)`  </br>
   "name": "Gaming keyboard", </br>
   "price": 1200,</br>
@@ -56,12 +56,12 @@ Contents-Type:json
 POST http://localhost:3000/api/suppliers </br>
 Content-Type: application/json
 
-{
-  "name": "Test Supplier Co.",
-  "contact": {
-    "email": "test@supplier.com",
-    "phone": "+12-456-908-345"
-  }
+{ </br>
+  "name": "Test Supplier Co.", </br>
+  "contact": {</br>
+    "email": "test@supplier.com",</br>
+    "phone": "+12-456-908-345"</br>
+  }</br>
 }
 
 
