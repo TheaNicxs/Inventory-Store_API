@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Inventory-Store
-=======
 # Inventory Management API
 
 A RESTful API for managing products, orders, and suppliers with MongoDB Atlas.
