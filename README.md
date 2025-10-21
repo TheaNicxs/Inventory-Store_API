@@ -24,20 +24,20 @@ A RESTful API for managing products, orders, and suppliers with MongoDB Atlas.
 POST http://localhost:3000/api/products </br>
 Content-Type: application/json
 
-{
-  "sku": "P001", <!-- you can create your own stock keeping unit name -->
-  "name": "Gaming keyboard",
-  "price": 1200,
-  "stock": 50
+{ </br>
+  "sku": "P001",   `(you can create your own stock keeping unit name)`  </br>
+  "name": "Gaming keyboard", </br>
+  "price": 1200,</br>
+  "stock": 50</br>
 }
 
 ### Deduct Stock
 POST http://localhost:3000/api/products/deduct-stock </br>
 Contents-Type:json
 
-{
-  "productId": "64f1a2b3c4d5e6f789012345", <!-- put the ID of the product that you created --> 
-  "quantity": 5 <!-- numbers of how much you want to deduct in the product -->
+{ </br>
+  "productId": "64f1a2b3c4d5e6f789012345",   `(put the ID of the product that you created)`  </br>
+  "quantity": 5   `( numbers of how much you want to deduct in the product)`  </br>
 }
 
 
@@ -56,12 +56,12 @@ Contents-Type:json
 POST http://localhost:3000/api/suppliers </br>
 Content-Type: application/json
 
-{
-  "name": "Test Supplier Co.",
-  "contact": {
-    "email": "test@supplier.com",
-    "phone": "+12-456-908-345"
-  }
+{ </br>
+  "name": "Test Supplier Co.", </br>
+  "contact": {</br>
+    "email": "test@supplier.com",</br>
+    "phone": "+12-456-908-345"</br>
+  }</br>
 }
 
 
@@ -80,14 +80,14 @@ Content-Type: application/json
 POST http://localhost:3000/api/orders </br>
 Content-Type: application/json
 
-{
-  "items": [
-    {
-      "productId": "64f1a2b3c4d5e6f789012345", <!-- ID of the created product -->
-      "quantity": 2, 
-      "price": 1200
-    }
-  ],
-  "supplierId": "68f108c9495fcb4b47be1aea", <!-- ID of the supplier that you created / posted -->
-  "status": "pending"
+{ </br>
+  "items": [ </br>
+    { </br>
+      "productId": "64f1a2b3c4d5e6f789012345",   `(ID of the created product )` </br> 
+      "quantity": 2, </br>
+      "price": 1200 </br>
+    } </br>
+  ], </br>
+  "supplierId": "68f108c9495fcb4b47be1aea",  `(ID of the supplier that you created / posted) `  </br>
+  "status": "pending" </br>
 }
