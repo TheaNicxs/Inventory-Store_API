@@ -1,7 +1,7 @@
 // controllers/orderController.js
-const Order = require('../models/Order');
+const Order = require('../models/order');
 const Product = require('../models/Product');
-const Supplier = require('../models/Supplier');
+const Supplier = require('../models/supplier');
 
 // Create order - Simplified without population
 exports.createOrder = async (req, res) => {
