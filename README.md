@@ -3,7 +3,7 @@
 A RESTful API for managing products, orders, and suppliers with MongoDB Atlas.
 
 ## Base URL
-`https://inventory-store-api.onrender.com`
+`https://inventory-store-api.onrender.com` </br>
 `http://localhost:3000/api` (local development)
 
 ## Endpoints
