@@ -2,13 +2,16 @@ require('dotenv').config();
 
 const express = require('express'); 
 const connectDB = require('./config/db');
+const productRoutes = require('./routes/productRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+const supplierRoutes = require('./routes/supplierRoutes');
 
 const app = express();
 
 app.use(express.json()); 
-app.use('/api', require('./routes/productRoutes')); 
-app.use('/api', require('./routes/orderRoutes')); 
-app.use('/api', require('./routes/supplierRoutes'));
+app.use('/api', productRoutes); 
+app.use('/api', orderRoutes); 
+app.use('/api', supplierRoutes);
 
 connectDB();
 
