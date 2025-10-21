@@ -1,5 +1,5 @@
 // controllers/supplierController.js
-const Supplier = require('../models/Supplier');
+const Supplier = require('../models/supplier');
 
 // Get all suppliers
 exports.getSuppliers = async (req, res) => {
